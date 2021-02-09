@@ -11,11 +11,19 @@ namespace UserRegistrationExceptions
             Regex re = new Regex(pattern);
             foreach (string input in inputs)
             {
-                if (re.IsMatch(input))
-                    Console.WriteLine($"{input} is Valid");
-                else
-                    Console.WriteLine($"{input} is inValid");
+                try
+                {
+                    if (re.IsMatch(input))
+                        Console.WriteLine($"{input} is Valid");
+                    else
+                        throw new InvalidInputException(input);
+                }
+                catch (InvalidInputException)
+                {
+
+                }
             }
+            
             Console.WriteLine("-----------------------------------------");
         }
         static void Main(string[] args)

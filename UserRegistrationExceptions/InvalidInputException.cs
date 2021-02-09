@@ -21,7 +21,7 @@ namespace UserRegistrationExceptions
         /// <param name="name">The name.</param>
         public InvalidInputException(string name) : base(name)
         {
-            
+            Console.WriteLine($"{name} is invalid input");
         }
     }
 }
