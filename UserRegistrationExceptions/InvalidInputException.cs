@@ -15,7 +15,7 @@ namespace UserRegistrationExceptions
 
         }
         /// <summary>
-        /// Initializes a new instance of the <see cref="MoodAnalysisException"/> class.
+        /// Initializes a new instance of the <see cref="InvalidInputException"/> class.
         /// </summary>
         /// <param name="type">The type.</param>
         /// <param name="name">The name.</param>
